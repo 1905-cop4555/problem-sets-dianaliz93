@@ -25,3 +25,12 @@ let revlists xs =
     List.map (fun x -> List.rev x) xs;;
 
 revlists [[0;1;1];[3;2];[];[5]];;
+
+//Problem 18
+
+let rec interleave = function
+    |([], ys) -> ys
+    |(xs, []) -> xs
+    |(x::xs, y::ys) -> x :: y  :: interleave(xs, ys);;
+
+interleave ([1;2;3],[4;5;6]);;
