@@ -18,3 +18,10 @@ let (.*) (a, b) (c, d) =
 
 (1, 2) .+ (1, 2);;
 (1,2) .+ (2,3) .* (3,7);;
+
+//Problem 17
+
+let revlists xs = 
+    List.map (fun x -> List.rev x) xs;;
+
+revlists [[0;1;1];[3;2];[];[5]];;
