@@ -34,3 +34,16 @@ let rec interleave = function
     |(x::xs, y::ys) -> x :: y  :: interleave(xs, ys);;
 
 interleave ([1;2;3],[4;5;6]);;
+
+//Problem 19
+//let rec gencut = function 
+    //|n , x::xs ->
+    //let(left, right) = gencut ((n-1), xs)
+    //(x::left, right)
+
+//let cut list = 
+    //gencut (length/2) list
+
+fun f -> String.length(f "cat");;
+fun f -> f (f "cat");;
+fun x y -> x + " " + y;;
