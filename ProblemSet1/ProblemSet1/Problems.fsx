@@ -47,3 +47,13 @@ interleave ([1;2;3],[4;5;6]);;
 fun f -> String.length(f "cat");;
 fun f -> f (f "cat");;
 fun x y -> x + " " + y;;
+
+//Problem 10
+
+fun x -> 5::x
+fun x -> x::[5]
+
+//Problem 9
+
+fun f -> f 17
+
